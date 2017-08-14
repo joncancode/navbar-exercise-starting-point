@@ -35,11 +35,10 @@
         </g>
       </svg>
       <li class="courses">
-        <a class="main-nav-items" href="#">
+        <a class="main-nav-items js-toggler" href="#">
             Courses
           </a>
-        <nav>
-          <div class="courses-container">
+        <nav class="sub-nav-container" hidden>
             <ul class="courses-nav">
               <li class="web-dev-bootcamp">
                 <a class="courses-nav-items" href="#">
@@ -60,15 +59,13 @@
                 </a>
               </li>
             </ul>
-          </div>
         </nav>
       </li>
       <li class="how-it-works">
-        <a class="main-nav-items" href="#">
+        <a class="main-nav-items js-toggler" href="#">
             How it works
           </a>
-        <nav >
-          <div class="how-container">
+        <nav class="sub-nav-container" hidden>
             <ul class="how-it-works-nav">
               <li class="one-one-mentorship">
                 <a class="how-nav-items" href="#">
@@ -95,7 +92,6 @@
                   </a>
               </li>
             </ul>
-          </div>
         </nav>
       </li>
       <li class="reviews">
@@ -115,8 +111,31 @@
       </li>
     </ul>
   </nav>
+  <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
   <script>
-    console.log('hello')
+    // on click of link
+    // toggle containers
+    $('.js-toggler').on('click', function(e) {
+
+      const thisNav = $(this).siblings('.sub-nav-container');
+      const navClosed = thisNav.prop('hidden')
+
+      // set prop hidden to true
+
+      //$(thisNav).prop('hidden', true)
+
+      // on all nav containers that are not thisNav
+      console.log($(thisNav).not(".sub-nav-container"))
+      $(thisNav).not(".sub-nav-container").prop('hidden', true)
+
+      thisNav.prop('hidden', !navClosed)
+
+    })
+
+    // $('.sub-nav-container').prop('hidden', false) 
 
   </script>
 </body>
