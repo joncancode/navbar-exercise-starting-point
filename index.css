@@ -6,9 +6,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  display: flex;
-    flex-direction: row; 
-    flex: 1;
+  /*display: flex;
+  flex-direction: row;
+  flex: 1;*/
 }
 
 .hamburger {
@@ -28,28 +28,33 @@ body {
 }
 
 /* Add your CSS here */
-
-.logo{
-    background-color: red;
-}
-
 .main-nav {
   display: flex;
+    background-color: blue;
+    flex: 1;
 }
 
 .main-nav > li {
   text-transform: uppercase;
   list-style: none;
+
+
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    border-bottom: solid blue 2px;
-    padding: 10px ;
-
+  border-bottom: solid blue 2px;
+	padding: 10px;
+}
+.logo {
+  flex:1;
+  padding: 10px;  
+  min-width: 136px;
+  min-height: 28px;
+  background-color: red;
 }
 
 .courses {
@@ -75,27 +80,25 @@ a:hover {
   text-align: center;
   background-color: purple;
 }
-
 .sign-in {
-  text-align: center;
-  flex: 5;
+	background-color: lightsalmon;
+	flex: 4;
+	justify-content: end;
+}
+.sign-in-item {
+  /*text-align: right;*/
+  justify-content: end;
   background-color: lightgoldenrodyellow;
 }
-
-
-
-
 
 .courses-nav {
   /*show on click*/
   display: none;
-  /*max-width: 50px;*/
-  flex: 5;
+  flex: 1;
 }
 
 .how-it-works-nav {
   /*show on click*/
   display: none;
-  /*max-width: 50px;*/
-  flex: 1;
+  flex: 6;
 }
