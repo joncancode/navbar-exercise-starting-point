@@ -30,65 +30,62 @@ body {
 /* Add your CSS here */
 .main-nav {
   display: flex;
-    background-color: blue;
-    flex: 1;
+  flex: 1;
 }
 
 .main-nav > li {
   text-transform: uppercase;
   list-style: none;
-
-
+  padding: 10px;
 }
 
-a:link {
+a:link, a:visited {
   text-decoration: none;
+  color: #6799ff;
 }
 
 a:hover {
-  border-bottom: solid blue 2px;
-	padding: 10px;
+  border-bottom: solid #6799ff 2px;
+  padding: 10px;
 }
+
 .logo {
-  flex:1;
-  padding: 10px;  
-  min-width: 136px;
-  min-height: 28px;
-  background-color: red;
+  flex: 1.25;
+  padding: 10px;
+  min-width: 139px;
+  min-height: 40px;
 }
 
 .courses {
   flex: 1;
   text-align: center;
-  background-color: lightblue;
 }
 
 .how-it-works {
-  flex: 1;
+  flex: 1.5;
   text-align: center;
-  background-color: lightgreen;
 }
 
 .reviews {
   flex: 1;
   text-align: center;
-  background-color: pink;
 }
 
 .pricing {
   flex: 1;
   text-align: center;
-  background-color: purple;
 }
 .sign-in {
-	background-color: lightsalmon;
-	flex: 4;
-	justify-content: end;
+  flex: 4;
+  padding: 10px;
+  justify-content: end;
+  text-transform: uppercase;
+  list-style: none;
+  text-align: right;
 }
 .sign-in-item {
   /*text-align: right;*/
   justify-content: end;
-  background-color: lightgoldenrodyellow;
 }
 
 .courses-nav {
