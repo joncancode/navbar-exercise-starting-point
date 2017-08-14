@@ -124,12 +124,9 @@
       const navClosed = thisNav.prop('hidden')
 
       // set prop hidden to true
-
       //$(thisNav).prop('hidden', true)
-
       // on all nav containers that are not thisNav
-      console.log($(thisNav).not(".sub-nav-container"))
-      $(thisNav).not(".sub-nav-container").prop('hidden', true)
+      $(".sub-nav-container").prop('hidden', true)
 
       thisNav.prop('hidden', !navClosed)
 
