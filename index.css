@@ -37,21 +37,22 @@ body {
   text-transform: uppercase;
   list-style: none;
   padding: 10px;
+ 
 }
 
-a:link,
-a:visited {
+.main-nav-items:link,
+.main-nav-items:visited {
   text-decoration: none;
   color: #6799ff;
 }
 
-a:hover {
+.main-nav-items:hover {
   border-bottom: solid #6799ff 2px;
   padding: 10px;
 }
 
 .logo {
-  flex: 1.25;
+  flex: 2;
   padding: 10px;
   min-width: 139px;
   min-height: 40px;
@@ -84,57 +85,90 @@ a:hover {
   list-style: none;
   text-align: right;
 }
-.sign-in-item {
-  /*text-align: right;*/
-  justify-content: end;
+
+img {
+  min-height: 75px;
+  max-height: 75px;
 }
 
 .courses-container {
   position: absolute;
-  /* background-color: #f9fbff; */
   width: 100%;
   left: 0;
   top: 60px;
+  padding-top: 20px;
 }
-
+.how-container{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 60px;
+  padding-top: 20px;
+}
 .courses-nav {
   /*show on click*/
   flex: 1;
   display: flex;
   flex-direction: row;
   list-style: none;
-  background-color: lightgreen;
-  height: 200px;
-justify-content: center;
+  background-color: #f9fbff;
+}
+.courses-nav-items:link,
+.courses-nav-items:visited {
+  text-decoration: none;
+  color: black;
 }
 
-h4 {
+.courses-nav > li {
+  padding: 20px;
+}
 
+.how-it-works-nav > li {
+  padding: 20px;
 }
 
 .web-dev-bootcamp {
   flex: 1;
-  background-color: lightcyan;
 }
 
 .data-sci-bootcamp {
   flex: 1;
-  background-color: lightsalmon;
 }
 
 .all-courses {
   flex: 1;
-  background-color: lightgoldenrodyellow;
+}
+
+.how-container{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 60px;
+  
 }
 
 .how-it-works-nav {
-  /*show on click*/
-  display: none;
-  flex: 6;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
   list-style: none;
+  background-color: #f9fbff;
 }
 
-img {
-  min-height: 75px;
-  max-height: 75px;
+.how-nav-items:link,
+.how-nav-items:visited {
+  text-decoration: none;
+  color: black;
+}
+.student-outcomes {
+  flex:1;
+}
+.web-dev-job-guarantee {
+  flex:1;
+}
+.career-prep {
+  flex:1;
+}
+.one-one-mentorship {
+ flex: 1;
 }
