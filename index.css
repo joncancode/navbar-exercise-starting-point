@@ -39,7 +39,8 @@ body {
   padding: 10px;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   color: #6799ff;
 }
@@ -88,14 +89,52 @@ a:hover {
   justify-content: end;
 }
 
+.courses-container {
+  position: absolute;
+  /* background-color: #f9fbff; */
+  width: 100%;
+  left: 0;
+  top: 60px;
+}
+
 .courses-nav {
   /*show on click*/
-  display: none;
   flex: 1;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background-color: lightgreen;
+  height: 200px;
+justify-content: center;
+}
+
+h4 {
+
+}
+
+.web-dev-bootcamp {
+  flex: 1;
+  background-color: lightcyan;
+}
+
+.data-sci-bootcamp {
+  flex: 1;
+  background-color: lightsalmon;
+}
+
+.all-courses {
+  flex: 1;
+  background-color: lightgoldenrodyellow;
 }
 
 .how-it-works-nav {
   /*show on click*/
   display: none;
   flex: 6;
+  list-style: none;
+}
+
+img {
+  min-height: 75px;
+  max-height: 75px;
 }
